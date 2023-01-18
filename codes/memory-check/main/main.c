@@ -26,7 +26,7 @@ void MemoryView(){
 int heapMemory = (xPortGetFreeHeapSize())/1024;
 int freeBlock = (heap_caps_get_largest_free_block(MALLOC_CAP_8BIT))/1024;
 int DRamMemory = (heap_caps_get_free_size(MALLOC_CAP_8BIT))/1024;
-int IRamMemory = (heap_caps_get_free_size(MALLOC_CAP_32BIT))/1024;
+int IRamMemory = (heap_caps_get_free_size(MALLOC_CAP_32BIT) - heap_caps_get_free_size(MALLOC_CAP_8BIT))/1024;
 
     printf("[-] Getting ESP32 memory blocks info... \n\n ");
     printf("[+] Heap: %d kB\n ", heapMemory);
