@@ -14,8 +14,8 @@
 ![3 J4W46UFrCKbUv_JUSo6QeQ](https://user-images.githubusercontent.com/6265911/213053715-0454d1a9-6a73-4eee-9abf-24d57870c4df.png)
 
 ```
-• Non-constant static data (.data) and zero-initialized data (.bss) is placed by the linker into Internal SRAM as data memory. 
-The remaining space in this region is used for the runtime heap.
+• ESP-IDF allocates part of the Internal SRAM0 region for instruction RAM. 
+The region is defined in ESP32 Technical Reference Manual > System and Memory > Embedded Memory 
 ```
 
 ### DRAM (Data RAM)
@@ -23,8 +23,8 @@ The remaining space in this region is used for the runtime heap.
 ![2 J4W46UFrCKbUv_JUSo6QeQ](https://user-images.githubusercontent.com/6265911/213053708-ff7d52b5-4873-4006-9508-1b86a14fb9f3.png)
 
 ```
-• ESP-IDF allocates part of the Internal SRAM0 region for instruction RAM. 
-The region is defined in ESP32 Technical Reference Manual > System and Memory > Embedded Memory 
+• Non-constant static data (.data) and zero-initialized data (.bss) is placed by the linker into Internal SRAM as data memory. 
+The remaining space in this region is used for the runtime heap.
 ```
 
 
