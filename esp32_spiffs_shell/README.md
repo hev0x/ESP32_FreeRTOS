@@ -1,4 +1,4 @@
-# ESP32 SPIFFS - Pseudo Shell
+# ESP32 SPIFFS - *Pseudo Shell*
 
 (See the README.md file in the upper level 'examples' directory for more information about examples.)
 
